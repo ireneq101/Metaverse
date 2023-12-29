@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Orbitron&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--1, linear-gradient(180deg, #010208 16.39%, #010206 20.51%, #040008 24.79%, #010101 30.46%, #010101 34.11%, #010101 36.21%, #010101 100%));
+    width: 1540;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+header > .logo {
+    width: 45%;
+}
+
+header > nav {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+header > nav a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header > nav a:hover {
+    color: #F46EF7;
+    transition: 0.35s;
+}
+
+main {
+    color: white;
+}
+
+main > .section1 {
+    display: flex;
+    justify-content: center;
+}
+
+main > .section1 > .explore {
+    width: 44%;
+    padding: 200px 0;
+}
+
+main > .section1 > .explore h1 {
+    color: #FFF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.813rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
+    max-width: 80%;
+    cursor: default;
+    padding-bottom: 18px;
+}
+
+main > .section1 > .explore span {
+    background: var(--2, linear-gradient(97deg, #F86CF8 12.04%, #64CEF5 81.84%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main > .section1 > .explore p {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 48px;
+    max-width: 60%;
+    cursor: default;
+}
+
+main > .section1 > .explore button {
+    color: #FFF;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+main > .section1 > .explore .btn1 {
+    width: 173px;
+    height: 54px;
+    padding: 12px 14px;
+    margin-right: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: var(--3, linear-gradient(97deg, #D10ED1 12.04%, #10A3DA 81.84%));
+}
+
+/* main > .section1 > .explore .btn1:hover {
+    border: 1px solid var(--3, #D10ED1);
+    background-color: transparent;
+} */
+
+main > .section1 > .explore .btn2 {
+    width: 173px;
+    height: 54px;
+    padding: 12px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--3, #D10ED1);
+    background-color: transparent;
+    color: #FFF;
+}
+
+/* main > .section1 > .explore .btn2:hover {
+    background: var(--3, linear-gradient(97deg, #D10ED1 12.04%, #10A3DA 81.84%));
+    transition: all 56ms ease-in-out;
+} */
+
+main > .section1 > .explore > .figure {
+    display: flex;
+    gap: 68px;
+    padding-top: 40px;
+}
+
+main > .section1 > .explore > .figure > .nun h3 {
+    /* color: #FFF; */
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: default;
+}
+
+main > .section1 > .explore > .figure > .nun p {
+    /* color: #FFF; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: default;
+}
+
+main > .section1 > .pic1 {
+    padding: 96px 0;
+    width: 44%;
+    position: relative;
+}
+
+main > .section1 > .pic1 .star {
+    position: absolute;
+    bottom: 60%;
+    left: 2%;
+    z-index: 3;
+}
+
+main > .section1 > .pic1 .inn {
+    width: 100%;
+}
+
+main > .section2 {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+main > .section2 > .pic2 {
+    width: 44%;
+    position: relative;
+}
+
+main > .section2 > .pic2 .game2 {
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+main > .section2 > .pic2 .game {
+    position: absolute;
+    z-index: 2;
+    left: 34%;
+    top: 25%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    /* stroke-width: 1px;
+    stroke: var(--2, #F86CF8); */
+}
+
+main > .section2 > .pic2 img {
+   border: 2px solid #F86CF8;
+   border-spacing: 15%;
+}
+
+main > .section2 > .meta {
+    width: 44%;
+    padding: 110px 0;
+    padding-left: 80px;
+}
+
+main > .section2 > .meta h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 2.188rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 16px;
+    cursor: default;
+}
+
+main > .section2 > .meta span {
+    background: var(--2, linear-gradient(97deg, #F86CF8 12.04%, #64CEF5 81.84%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Orbitron", sans-serif;
+    font-size: 2.188rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+main > .section2 > .meta p {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 85%;
+    padding-bottom: 52px;
+    cursor: default;
+}
+
+main > .section2 > .meta button {
+    color: #FFF;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--3, linear-gradient(97deg, #D10ED1 12.04%, #10A3DA 81.84%));
+    padding: 12px 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .section3 {
+    width: 100%;
+    padding-bottom: 87px;
+}
+
+main > .section3 > div {
+    margin: 0 27.5%;
+    align-content: center;
+}
+
+main > .section3 h1 {
+    text-align: center;
+    color: #FFF;
+    cursor: default;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.188rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 16px;
+}
+
+main > .section3 span {
+    background: var(--2, linear-gradient(97deg, #F86CF8 12.04%, #64CEF5 81.84%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Orbitron", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+main > .section3 > div p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: default;
+    padding-left: 12%;
+    max-width: 87%;
+}
+
+main > .section4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 0 6%;
+}
+
+main > .section4 > .collections {
+    background-color: #090823;
+    border-top-right-radius: 7%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5% 0 10% 5%;
+}
+
+main > .section4 > .collections img {
+    width: 95%;
+    padding-bottom: 5%;
+}
+
+main > .section4 > .collections h3 {
+    color: #FFF;
+    cursor: default;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 5%;
+}
+
+main > .section4 > .collections p {
+    color: #FFF;
+    cursor: default;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 87%;
+    padding-bottom: 5%;
+}
+
+main > .section4 > .collections button {
+    width: 122px;
+    padding: 12px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 5px;
+    border: 1px solid var(--3, #D10ED1);
+    background-color: transparent;
+}
+
+main > .section4 > .collections .btn {
+    border-radius: 5px;
+    background: var(--3, linear-gradient(97deg, #D10ED1 12.04%, #10A3DA 81.84%));
+    margin-right: 16px;
+}
+
+main > .section5 {
+    width: 100%;
+    padding-top: 120px;
+} 
+
+main > .section5 h1 {
+    text-align: center;
+    color: #FFF;
+    cursor: default;
+    font-family: "Orbitron";
+    font-size: 2.188rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 16px;
+}
+
+main > .section5 span {
+    background: var(--1, linear-gradient(97deg, #65bbf5 0.00%, #64CEF5 81.84%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Orbitron";
+}
+
+main > .section5 p {
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    cursor: default;
+    font-family: "Poppins";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 35%;
+    max-width: 65%;
+}
+
+main > .section6 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main > .section6 .metapic {
+    text-align: center;
+    width: 100%;
+    padding: 0 6%;
+    padding-top: 45px;
+}
+
+main > .section6 .play {
+    position: absolute;
+    z-index: 3;
+    right: 46%;
+    bottom: -370%;
+}
+
+main > .section6 h1{
+    position: absolute;
+    z-index: 3;
+    left: 10%;
+    bottom: -408%;
+    color: #FFF;
+    font-family: "Orbitron";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: default;
+    /* border-radius: 0px 0px 25px 25px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(5px);
+    width: 1335px;
+height: 148px;
+flex-shrink: 0; */
+}
+
+footer {
+    width: 100%px;
+    height: 443px;
+    flex-shrink: 0;
+    background: #090823;
+    display: grid;
+    grid-template-columns: repeat(4, 35% 23% 21% 21%);
+    padding: 7.5% 6%;
+    margin-top: 12%;
+}
+
+footer > .logo2 {
+    width: 100%;
+}
+
+footer > .logo2 img {
+    padding-bottom: 23px;
+}
+
+footer > div img {
+    justify-content: center;
+    align-content: center;
+    cursor: default;
+}
+
+footer > .logo2 p {
+    max-width: 80%;
+    cursor: default;
+}
+
+footer > div h3 {
+    padding-bottom: 23px;
+    color: #FFF;
+    font-family: "Orbitron";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+footer > div p {
+    padding-bottom: 8px;
+    color: #FFF;
+    font-family: "Poppins";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+footer > .serve {
+    display: grid;
+    padding-left: 25%;
+    cursor: default;
+}
+
+footer > .serve p:hover {
+    color: #F46EF7;
+    transition: 0.35s;
+}
+
+footer > .about {
+    display: grid;
+    padding-left: 30%;
+    cursor: default;
+}
+
+footer > .about p:hover {
+    color: #F46EF7;
+    transition: 0.35s;
+}
+
+footer > .contact {
+    padding-left: 17%;
+    cursor: default;
+}
+
+footer > .contact p {
+    padding-top: 10px;
+}
+
+footer > .contact img {
+    width: 60%;
+}
+
+footer > .contact img:hover {
+    background: var(--3, linear-gradient(97deg, #10A3DA 12.84%, #D10ED1 81.04%));
+    border-radius: 10%;
+    width: 36px;
+    height: 35px;
+    transform: rotate(-180deg);
+    border-radius: 100%;
+    transition: 0.30s;
+}
+
+footer > .contact > ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    /* gap: 5px; */
+}
