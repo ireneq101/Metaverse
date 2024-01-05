@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 * {
     padding: 0;
@@ -22,11 +23,11 @@ header > .logo {
 }
 
 header > nav {
-    width: 30%;
+    width: 40%;
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    gap: 50px;
+    gap: 20px;
 }
 
 header > nav a {
@@ -41,8 +42,10 @@ header > nav a {
 }
 
 header > nav a:hover {
-    color: #F46EF7;
-    transition: 0.35s;
+    background: var(--2, linear-gradient(97deg, #F86CF8 12.04%, #64CEF5 81.84%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 main {
@@ -57,6 +60,7 @@ main > .section1 {
 main > .section1 > .explore {
     width: 44%;
     padding: 200px 0;
+    /* padding-left: 4%; */
 }
 
 main > .section1 > .explore h1 {
@@ -86,7 +90,7 @@ main > .section1 > .explore p {
     font-weight: 400;
     line-height: normal;
     padding-bottom: 48px;
-    max-width: 60%;
+    max-width: 70%;
     cursor: default;
 }
 
@@ -109,12 +113,12 @@ main > .section1 > .explore .btn1 {
     align-items: center;
     border-radius: 5px;
     background: var(--3, linear-gradient(97deg, #D10ED1 12.04%, #10A3DA 81.84%));
+    transition: all .3s ease-in-out;
 }
 
-/* main > .section1 > .explore .btn1:hover {
-    border: 1px solid var(--3, #D10ED1);
-    background-color: transparent;
-} */
+main > .section1 > .explore .btn1:hover {
+    transform: scale(1.1);
+}
 
 main > .section1 > .explore .btn2 {
     width: 173px;
@@ -127,12 +131,13 @@ main > .section1 > .explore .btn2 {
     border: 1px solid var(--3, #D10ED1);
     background-color: transparent;
     color: #FFF;
+    transition: all .3s ease-in-out;
 }
 
-/* main > .section1 > .explore .btn2:hover {
+main > .section1 > .explore .btn2:hover {
     background: var(--3, linear-gradient(97deg, #D10ED1 12.04%, #10A3DA 81.84%));
-    transition: all 56ms ease-in-out;
-} */
+    transform: scale(1.1);
+}
 
 main > .section1 > .explore > .figure {
     display: flex;
@@ -161,16 +166,8 @@ main > .section1 > .explore > .figure > .nun p {
 }
 
 main > .section1 > .pic1 {
-    padding: 96px 0;
+    padding: 8% 0 0 0;
     width: 44%;
-    position: relative;
-}
-
-main > .section1 > .pic1 .star {
-    position: absolute;
-    bottom: 60%;
-    left: 2%;
-    z-index: 3;
 }
 
 main > .section1 > .pic1 .inn {
@@ -188,25 +185,15 @@ main > .section2 > .pic2 {
     position: relative;
 }
 
-main > .section2 > .pic2 .game2 {
+main > .section2 > .pic2 img {
     border-top-right-radius: 10%;
     border-bottom-left-radius: 10%;
 }
 
-main > .section2 > .pic2 .game {
-    position: absolute;
-    z-index: 2;
-    left: 34%;
-    top: 25%;
-    border-top-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    /* stroke-width: 1px;
-    stroke: var(--2, #F86CF8); */
-}
-
-main > .section2 > .pic2 img {
-   border: 2px solid #F86CF8;
-   border-spacing: 15%;
+.slide-left, .slide-right {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.100s ease, transform 0.100s ease;
 }
 
 main > .section2 > .meta {
@@ -260,6 +247,11 @@ main > .section2 > .meta button {
     padding: 12px 14px;
     justify-content: center;
     align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+main > .section2 > .meta button:hover {
+    transform: scale(1.1);
 }
 
 main > .section3 {
@@ -304,8 +296,8 @@ main > .section3 > div p {
     font-weight: 400;
     line-height: normal;
     cursor: default;
-    padding-left: 12%;
-    max-width: 87%;
+    padding-left: 5%;
+    max-width: 95%;
 }
 
 main > .section4 {
@@ -313,6 +305,12 @@ main > .section4 {
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin: 0 6%;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.100s ease, transform 0.100s ease;
 }
 
 main > .section4 > .collections {
@@ -352,9 +350,9 @@ main > .section4 > .collections p {
     padding-bottom: 5%;
 }
 
-main > .section4 > .collections button {
-    width: 122px;
-    padding: 12px 14px;
+main > .section4 > .collections .btn2, .btn {
+    width: 30%;
+    padding: 12px 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -368,12 +366,22 @@ main > .section4 > .collections button {
     border-radius: 5px;
     border: 1px solid var(--3, #D10ED1);
     background-color: transparent;
+    transition: all .3s ease-in-out;
 }
 
 main > .section4 > .collections .btn {
     border-radius: 5px;
     background: var(--3, linear-gradient(97deg, #D10ED1 12.04%, #10A3DA 81.84%));
     margin-right: 16px;
+}
+
+main > .section4 > .collections .btn:hover {
+    transform: scale(1.1);
+}
+
+main > .section4 > .collections .btn2:hover {
+    background: var(--3, linear-gradient(97deg, #D10ED1 12.04%, #10A3DA 81.84%));
+    transform: scale(1.1);
 }
 
 main > .section5 {
@@ -410,8 +418,8 @@ main > .section5 p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left: 35%;
-    max-width: 65%;
+    padding-left: 32%;
+    max-width: 67%;
 }
 
 main > .section6 {
@@ -422,35 +430,8 @@ main > .section6 {
 main > .section6 .metapic {
     text-align: center;
     width: 100%;
-    padding: 0 6%;
+    padding: 0 0 0 6%;
     padding-top: 45px;
-}
-
-main > .section6 .play {
-    position: absolute;
-    z-index: 3;
-    right: 46%;
-    bottom: -370%;
-}
-
-main > .section6 h1{
-    position: absolute;
-    z-index: 3;
-    left: 10%;
-    bottom: -408%;
-    color: #FFF;
-    font-family: "Orbitron";
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    cursor: default;
-    /* border-radius: 0px 0px 25px 25px;
-    background: rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(5px);
-    width: 1335px;
-height: 148px;
-flex-shrink: 0; */
 }
 
 footer {
@@ -459,7 +440,7 @@ footer {
     flex-shrink: 0;
     background: #090823;
     display: grid;
-    grid-template-columns: repeat(4, 35% 23% 21% 21%);
+    grid-template-columns: repeat(4, 45% 18% 18% 18%);
     padding: 7.5% 6%;
     margin-top: 12%;
 }
@@ -506,28 +487,32 @@ footer > div p {
 
 footer > .serve {
     display: grid;
-    padding-left: 25%;
+    /* padding-left: 25%; */
     cursor: default;
 }
 
 footer > .serve p:hover {
-    color: #F46EF7;
-    transition: 0.35s;
+    background: var(--2, linear-gradient(97deg, #F86CF8 12.04%, #64CEF5 81.84%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 footer > .about {
     display: grid;
-    padding-left: 30%;
+    /* padding-left: 30%; */
     cursor: default;
 }
 
 footer > .about p:hover {
-    color: #F46EF7;
-    transition: 0.35s;
+    background: var(--2, linear-gradient(97deg, #F86CF8 12.04%, #64CEF5 81.84%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 footer > .contact {
-    padding-left: 17%;
+    /* padding-left: 17%; */
     cursor: default;
 }
 
@@ -546,12 +531,11 @@ footer > .contact img:hover {
     height: 35px;
     transform: rotate(-180deg);
     border-radius: 100%;
-    transition: 0.30s;
+    transition: 0.60s;
 }
 
 footer > .contact > ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     list-style: none;
-    /* gap: 5px; */
 }
