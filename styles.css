@@ -15,7 +15,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 2% 6%;
+    padding: 4% 6%;
 }
 
 header > .logo {
@@ -48,8 +48,29 @@ header > nav a:hover {
     -webkit-text-fill-color: transparent;
 }
 
+header > img {
+    display: none;
+    background-color: #fff;
+}
+
+main > .mobile-section {
+    display: none;
+}
+
 main {
     color: white;
+}
+
+main > .nun {
+    display: none;
+}
+
+main > .off {
+    display: none;
+}
+
+main > .mine {
+    display: none;
 }
 
 main > .section1 {
@@ -293,6 +314,10 @@ main > .section3 > div p {
     max-width: 95%;
 }
 
+main > .section3 img {
+    display: none;
+}
+
 main > .section4 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -427,6 +452,22 @@ main > .section6 .metapic {
     padding-top: 45px;
 }
 
+main > .section7 {
+    display: none;
+}
+
+main > .section8 {
+    display: none;
+}
+
+main > .section9 {
+    display: none;
+}
+
+footer > .abse {
+    display: none;
+}
+
 footer {
     width: 100%px;
     height: 443px;
@@ -509,6 +550,10 @@ footer > .contact {
     cursor: default;
 }
 
+footer > .contact2 {
+    display: none;
+}
+
 footer > .contact p {
     padding-top: 10px;
 }
@@ -524,7 +569,7 @@ footer > .contact img:hover {
     height: 35px;
     transform: rotate(-360deg);
     border-radius: 100%;
-    transition: 0.60s;
+    transition: 1.0s;
 }
 
 footer > .contact > ul {
@@ -764,6 +809,11 @@ footer > .contact > ul {
 }
 
 @media screen and (max-width: 1153px) {
+    main > .section3 > div p {
+        padding-left: 2%;
+        max-width: 100%;
+    }
+
     main > .section1 > .explore {
         padding: 120px 0;
     }
@@ -810,5 +860,1804 @@ footer > .contact > ul {
 
     main > .section4 > .collections .btn {
         margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 1094px) {
+    main > .section1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+    }
+
+    main > .section1 > .pic1 {
+        padding: 8% 0 0 0;
+        width: 44%;
+        display: none;
+    }
+
+    main > .section1 > .explore > .figure {
+        display: none;
+        gap: 68px;
+        padding-top: 40px;
+    }
+
+    header {
+        padding: 8% 6%;
+    }
+
+    header > .logo {
+        width: 45%;
+    }
+
+    header > .logo img {
+        width: 55%;
+    }
+    
+    header > nav {
+        /* width: 40%; */
+        display: none;
+        /* align-items: flex-start;
+        justify-content: space-evenly;
+        gap: 20px; */
+    }
+
+    header > img {
+        /* display: flex; */
+        width: 5%;
+        background-color: #010101;
+    }
+
+    header > .open {
+        /* width: 9%; */
+        display: flex;
+    }
+    
+    main > .mobile-section {
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 190px;
+        width: 80%;
+    }
+
+    main > .mobile-section > img {
+        width: 100%;
+    }
+
+    main > .nun, .off, .mine {
+        position: absolute;
+    }
+
+    main > .nun > h3, .off > h3, .mine > h3 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        cursor: default;
+        padding-bottom: 10px;
+    }
+
+    main > .nun > p, .off > p, .mine p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: default;
+    }
+
+    main > .nun {
+        inset: 50% 0 0 7%;
+        background-color: rgb(0, 0, 0);
+        width: 15%;
+        height: 18%;
+        display: flex;
+        flex-direction: column;
+        /* position: absolute; */
+    }
+
+    main > .off {
+        inset: 30% 0 0 32%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main > .mine {
+        inset: 43% 0 0 81%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main > .section1 > .explore {
+        width: 100%;
+        padding: 25px 0;
+        margin: 0 auto;
+    }
+
+    main > .section1 > .explore h1 {
+        font-size: 3.5rem;
+        line-height: 68px;
+        text-align: center;
+        padding-bottom: 18px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    main > .section1 > .explore p {
+        text-align: center;
+        font-size: 2.2rem;
+        padding-bottom: 48px;
+        max-width: 77%;
+        margin: 0 auto;
+    }
+
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 30%;
+    }
+
+    main > .section1 > .explore > .click > button {
+        width: 190px;
+        height: 70px;
+        font-size: 1.5rem;
+        /* text-align: center; */
+    }
+
+    main > .section2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 250px 0 170px 0;
+    }
+    
+    main > .section2 > .pic2 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    main > .section2 > .pic2 img {
+        width: 100%;
+    }
+    
+    main > .section2 > .meta {
+        width: 100%;
+        padding: 115px 0;
+        padding-left: 120px;
+    }
+
+    .slide-left {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.200s ease, transform 0.200s ease;
+    }
+
+    .slide-right {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.400s ease, transform 0.400s ease;
+    }
+    
+    main > .section2 > .meta h1 {
+        font-size: 3.5rem;
+        padding-bottom: 20px;
+    }
+    
+    main > .section2 > .meta p {
+        font-size: 2rem;
+        line-height: 50px;
+        max-width: 90%;
+        padding-bottom: 52px;
+    }
+    
+    main > .section2 > .meta button {
+        font-size: 1.5rem;
+        padding: 17px 18px;
+        border-radius: 10px;
+    }
+
+    main > .section3 {
+        width: 100%;
+        padding-left: 120px;
+    }
+    
+    main > .section3 > div {
+        margin: 0 0;
+    }
+    
+    main > .section3 h1 {
+        text-align: start;
+        font-size: 3.5rem;
+        max-width: 80%;
+    }
+    
+    main > .section3 > div p {
+        text-align: start;
+        font-size: 2rem;
+        padding-left: 0;
+        max-width: 90%;
+    }
+
+    main > .section3 > .arrow {
+        width: 20%;
+        position: absolute;
+        inset: 330% 0 0 82%;
+    }
+
+    main > .section3 img {
+        display: flex;
+        width: 25%;
+    }
+
+    main > .section4 {
+        display: none;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        margin: 0 6%;
+    }
+
+    main > .section7 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        margin: 0 9%;
+    }
+    
+    main > .section7 > .collections {
+        background-color: #090823;
+        border-top-right-radius: 7%;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 5% 0 10% 5%;
+    }
+    
+    main > .section7 > .collections img {
+        width: 95%;
+        padding-bottom: 5%;
+    }
+    
+    main > .section7 > .collections h3 {
+        color: #FFF;
+        cursor: default;
+        font-family: "Orbitron", sans-serif;
+        font-size: 2.2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-bottom: 5%;
+    }
+    
+    main > .section7 > .collections p {
+        color: #FFF;
+        cursor: default;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 87%;
+        padding-bottom: 5%;
+    }
+    
+    main > .section7 > .collections .btn2, .btn {
+        width: 30%;
+        padding: 17px 5px;
+        justify-content: center;
+        align-items: center;
+        /* gap: 10px; */
+        cursor: pointer;
+        color: #FFF;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 10px;
+        border: 1px solid var(--3, #D10ED1);
+        background-color: transparent;
+        transition: all .3s ease-in-out;
+    }
+    
+    main > .section7 > .collections .btn {
+        border-radius: 5px;
+        background: var(--3, linear-gradient(97deg, #D10ED1 12.04%, #10A3DA 81.84%));
+        margin-right: 16px;
+    }
+    
+    main > .section7 > .collections .btn:hover {
+        transform: scale(1.1);
+    }
+    
+    main > .section7 > .collections .btn2:hover {
+        background: var(--3, linear-gradient(97deg, #D10ED1 12.04%, #10A3DA 81.84%));
+        transform: scale(1.1);
+    }
+
+    main > .section5 {
+        width: 100%;
+        padding-top: 120px;
+        padding-left: 120px;
+    } 
+    
+    main > .section5 h1 {
+        text-align: start;
+        color: #FFF;
+        cursor: default;
+        font-family: "Orbitron";
+        font-size: 3.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-bottom: 16px;
+    }
+    
+    main > .section5 p {
+        text-align: start;
+        font-size: 2rem;
+        padding-left: 0;
+        max-width: 95%;
+    }
+
+    main > .section6 {
+        display: none;
+    }
+
+    main > .section8 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+
+    main > .section8 > img {
+        width: 80%;
+        margin: 0 auto;
+        border: 4px solid #D10ED1;
+        border-radius: 40px;
+    }
+
+    main > .section8 > .week {
+        width: 100%;
+        display: flex;
+        padding-top: 80px;
+        position: relative;
+    }
+
+    main > .section8 > .week img {
+        width: 13%;
+        background-color: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        inset: 35% 0 0 76%;
+    }
+
+    main > .section8 > .week h1 {
+        font-family: "Orbitron";
+        font-size: 3.5rem;
+        font-style: normal;
+        font-weight: 600;
+        max-width: 60%;
+        padding-left: 120px;
+    }
+
+    main > .section9 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 150px;
+    }
+
+    main > .section9 > img {
+        width: 80%;
+        margin: 0 auto;
+        border: 4px solid #D10ED1;
+        border-radius: 40px;
+    }
+
+    main > .section9 > .online {
+        width: 100%;
+        display: flex;
+        padding-top: 80px;
+        position: relative;
+    }
+
+    main > .section9 > .online img {
+        width: 13%;
+        background-color: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        inset: 35% 0 0 76%;
+    }
+
+    main > .section9 > .online h1 {
+        font-family: "Orbitron";
+        font-size: 3.5rem;
+        font-style: normal;
+        font-weight: 600;
+        max-width: 60%;
+        padding-left: 120px;
+    }
+
+    footer {
+        width: 100%px;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: none;
+        padding: 7.5% 0;
+        margin-top: 12%;
+        padding: 100px 120px 0 120px;
+    }
+    
+    footer > .logo2 {
+        width: 100%;
+    }
+    
+    footer > .logo2 img {
+        padding-bottom: 45px;
+        width: 30%;
+    }
+    
+    footer > div img {
+        justify-content: center;
+        align-content: center;
+        cursor: default;
+    }
+    
+    footer > .logo2 p {
+        max-width: 100%;
+        padding-bottom: 8px;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    footer > div h3 {
+        padding-bottom: 23px;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    footer > div p {
+        padding-bottom: 8px;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    footer > .serve {
+        display: none;
+        /* padding-left: 25%; */
+        cursor: default;
+    }
+    
+    footer > .serve p:hover {
+        background: var(--2, linear-gradient(97deg, #F86CF8 12.04%, #64CEF5 81.84%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    footer > .about {
+        display: none;
+        /* padding-left: 30%; */
+        cursor: default;
+    }
+    
+    footer > .about p:hover {
+        background: var(--2, linear-gradient(97deg, #F86CF8 12.04%, #64CEF5 81.84%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    footer > .abse {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 65px;
+    }
+
+    footer > .contact {
+        display: none;
+    }
+    
+    footer > .contact2 {
+        width: 100%;
+        cursor: default;
+        display: flex;
+        flex-direction: column;
+        padding-top: 65px;
+    }
+    
+    footer > .contact2 p {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    
+    footer > .contact2 img {
+        width: 80%;
+        /* padding-left: 90%; */
+    }
+    
+    footer > .contact2 img:hover {
+        background: var(--3, linear-gradient(97deg, #10A3DA 12.84%, #D10ED1 81.04%));
+        border-radius: 10%;
+        width: 80%;
+        height: 95%;
+        transform: rotate(-360deg);
+        border-radius: 100%;
+        transition: 1.0s;
+    }
+    
+    footer > .contact2 > ul {
+        display: grid;
+        grid-template-columns: repeat(4, 10%);
+        list-style: none;
+        gap: 0;
+        /* display: flex; */
+    }
+}
+
+@media screen and (max-width: 1011px) {
+    main > .section2 > .meta {
+        width: 100%;
+        padding: 115px 0;
+        padding-left: 111px;
+        padding-right: 0;
+    }
+
+    main > .section2 > .meta p {
+        font-size: 1.7rem;
+        line-height: 50px;
+        max-width: 92%;
+        padding-bottom: 52px;
+    }
+
+    main > .section3 > {
+        width: 100%;
+        padding: 115px 0;
+        padding-left: 111px;
+    }
+
+    main > .section3 > .arrow {
+        inset: 315% 0 0 82%;
+    }
+
+    main > .section3 > div p {
+        text-align: start;
+        font-size: 1.8rem;
+        padding-left: 0;
+        max-width: 92%;
+    }
+
+    main > .section5 > {
+        width: 100%;
+        padding: 115px 0;
+        padding-left: 111px;
+    }
+
+    main > .section5 > {
+        width: 100%;
+        padding: 115px 0;
+        padding-left: 111px;
+    }
+
+    main > .section5 p {
+        text-align: start;
+        font-size: 1.8rem;
+        padding-left: 0;
+        max-width: 92%;
+    }
+
+    main > .section8 > .week h1 {
+        width: 100%;
+        padding-left: 109px;
+    }
+
+    main > .section9 > .online h1 {
+        width: 100%;
+        padding-left: 109px;
+    }
+
+    footer {
+        padding: 100px 109px 0 109px;
+    }
+
+    footer > .logo2 p {
+        max-width: 100%;
+        padding-bottom: 8px;
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+
+    footer > div p {
+        padding-bottom: 8px;
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 963px) {
+    main > .nun > h3, .off > h3, .mine > h3 {
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+
+    main > .nun > p, .off > p, .mine p {
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+
+    main > .nun {
+        inset: 48% 0 0 7%;
+        background-color: rgb(0, 0, 0);
+        width: 15%;
+        height: 13%;
+    }
+
+    main > .off {
+        inset: 27% 0 0 32%;
+    }
+
+    main > .mine {
+        inset: 38% 0 0 81%;
+    }
+
+    footer > .logo2 img {
+        width: 39%;
+    }
+}
+
+@media screen and (max-width: 947px) {
+    main > .section3 > .arrow {
+        inset: 309% 0 0 82%;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    /* main > .section1 > .explore h1 {
+        font-size: 3rem;
+    } */
+
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 25%;
+    }
+
+    main > .section1 > .explore > .click > button {
+        width: 220px;
+        height: 70px;
+        font-size: 1.5rem;
+        /* text-align: center; */
+    }
+
+    main > .section2 > .meta h1 {
+        font-size: 3rem;
+        padding-bottom: 20px;
+    }
+
+    main > .section3 h1 {
+        font-size: 3rem;
+        max-width: 80%;
+    }
+
+    main > .section5 h1 {
+        font-size: 3rem;
+    }
+
+    main > .section8 > .week h1 {
+        font-size: 3rem;
+        max-width: 60%;
+    }
+
+    main > .section8 > .week img {
+        width: 11%;
+        inset: 35% 0 0 76%;
+    }
+
+    main > .section9 > .online h1 {
+        font-size: 3rem;
+        max-width: 60%;
+    }
+
+    main > .section9 > .online img {
+        width: 11%;
+        inset: 35% 0 0 76%;
+    }
+
+    footer > .logo2 img {
+        width: 37%;
+    }
+
+    footer > div h3 {
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 916px) {
+    main > .section3 > .arrow {
+        inset: 300% 0 0 82%;
+    }
+}
+
+@media screen and (max-width: 856px) {
+    main > .nun > h3, .off > h3, .mine > h3 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    main > .nun > p, .off > p, .mine p {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    main > .nun {
+        inset: 45% 0 0 7%;
+        background-color: rgb(0, 0, 0);
+        width: 15%;
+        height: 13%;
+    }
+
+    main > .off {
+        inset: 27% 0 0 35%;
+    }
+
+    main > .mine {
+        inset: 35% 0 0 81%;
+    }
+
+    main > .section2 > .meta {
+        width: 100%;
+        padding-left: 109px;
+    }
+
+    main > .section2 > .meta p {
+        font-size: 1.5rem;
+        line-height: 40px;
+        max-width: 92%;
+        padding-bottom: 52px;
+    }
+
+    main > .section3 {
+        width: 100%;
+        padding-left: 109px;
+    }
+
+    main > .section3 > .arrow {
+        inset: 293% 0 0 82%;
+    }
+
+    main > .section3 > div p {
+        text-align: start;
+        font-size: 1.6rem;
+        padding-left: 0;
+        max-width: 92%;
+    }
+
+    main > .section5 {
+        width: 100%;
+        padding: 115px 0;
+        padding-left: 109px;
+    }
+
+    main > .section5 p {
+        text-align: start;
+        font-size: 1.8rem;
+        padding-left: 0;
+        max-width: 92%;
+    }
+
+    main > .section7 > .collections h3 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    main > .section7 > .collections p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        max-width: 95%;
+    }
+
+    main > .section7 > .collections .btn2, .btn {
+        width: 28%;
+        padding: 14px 5px;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    main > .section8 > .week h1 {
+        width: 100%;
+        padding-left: 109px;
+    }
+
+    main > .section9 > .online h1 {
+        width: 100%;
+        padding-left: 109px;
+    }
+
+    footer > .logo2 p {
+        max-width: 100%;
+        padding-bottom: 8px;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    footer > div p {
+        padding-bottom: 8px;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    main > .section1 > .explore h1 {
+        font-size: 3rem;
+        line-height: 68px;
+        text-align: center;
+        padding-bottom: 18px;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    
+    main > .section1 > .explore p {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 300;
+        padding-bottom: 48px;
+        max-width: 77%;
+        margin: 0 auto;
+    }
+
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 20%;
+    }
+
+    main > .section1 > .explore > .click > button {
+        width: 240px;
+        height: 70px;
+        font-size: 1.5rem;
+        /* text-align: center; */
+    }
+
+    main > .nun {
+        inset: 43% 0 0 7%;
+        background-color: rgb(0, 0, 0);
+        width: 15%;
+        height: 13%;
+    }
+
+    main > .section2 > .meta h1 {
+        font-size: 2.9rem;
+        padding-bottom: 20px;
+    }
+
+    main > .section3 h1 {
+        font-size: 2.9rem;
+        max-width: 80%;
+    }
+
+    main > .section3 > .arrow {
+        inset: 287% 0 0 82%;
+    }
+
+    main > .section5 h1 {
+        font-size: 2.9rem;
+    }    
+    
+    main > .section5 p {
+        text-align: start;
+        font-size: 1.6rem;
+        padding-left: 0;
+        max-width: 92%;
+    }
+
+    main > .section8 > .week h1 {
+        font-size: 2.9rem;
+        max-width: 76%;
+    }
+
+    main > .section8 > .week img {
+        width: 10%;
+        inset: 40% 0 0 76%;
+    }
+
+    main > .section9 > .online h1 {
+        font-size: 2.9rem;
+        max-width: 76%;
+    }
+
+    main > .section9 > .online img {
+        width: 10%;
+        inset: 40% 0 0 76%;
+    }
+
+    footer > .logo2 img {
+        width: 45%;
+    }
+
+    footer > .logo2 p {
+        max-width: 100%;
+        padding-bottom: 8px;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    footer > div h3 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    footer > div p {
+        padding-bottom: 8px;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 802px) {
+    main > .nun > h3, .off > h3, .mine > h3 {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    main > .nun > p, .off > p, .mine p {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 18%;
+    }
+
+    main > .section1 > .explore h1 {
+        font-size: 3rem;
+        line-height: 68px;
+        text-align: center;
+        padding-bottom: 18px;
+        max-width: 68%;
+        margin: 0 auto;
+    }
+
+    main > .section2 > .meta p {
+        font-size: 1.3rem;
+        line-height: 30px;
+        max-width: 92%;
+        padding-bottom: 52px;
+    }
+
+    main > .section3 > .arrow {
+        inset: 275% 0 0 82%;
+    }
+
+    main > .section3 > div p {
+        text-align: start;
+        font-size: 1.4rem;
+        padding-left: 0;
+        max-width: 92%;
+    }
+
+    main > .section5 p {
+        text-align: start;
+        font-size: 1.4rem;
+        padding-left: 0;
+        max-width: 92%;
+    }
+
+    main > .section7 > .collections h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    main > .section2 > .meta {
+        width: 100%;
+        padding-left: 90px;
+    }
+
+    main > .section3 {
+        width: 100%;
+        padding-left: 90px;
+    }
+
+    main > .section5 {
+        width: 100%;
+        padding-left: 90px;
+    }
+    
+    main > .section8 > .week h1 {
+        width: 100%;
+        padding-left: 90px;
+    }
+
+    main > .section9 > .online h1 {
+        width: 100%;
+        padding-left: 90px;
+    }
+
+    footer {
+        padding: 100px 90px 0 90px;
+    }
+}
+
+@media screen and (max-width: 714px) {
+    main > .section1 > .explore h1 {
+        font-size: 2.5rem;
+        line-height: 68px;
+        text-align: center;
+        padding-bottom: 18px;
+        max-width: 68%;
+        margin: 0 auto;
+    }
+    
+    main > .section1 > .explore p {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding-bottom: 48px;
+        max-width: 73%;
+        margin: 0 auto;
+    }
+
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 19%;
+    }
+
+    main > .section1 > .explore > .click > button {
+        width: 213px;
+        height: 70px;
+        font-size: 1.5rem;
+    }
+
+    main > .nun > h3, .off > h3, .mine > h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    main > .nun > p, .off > p, .mine p {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    main > .nun {
+        inset: 40% 0 0 7%;
+        background-color: rgb(0, 0, 0);
+        width: 15%;
+        height: 10%;
+    }
+
+    main > .off {
+        inset: 27% 0 0 32%;
+    }
+
+    main > .mine {
+        inset: 33% 0 0 81%;
+    }
+
+    main > .section2 {
+        padding: 250px 0 140px 0;
+    }
+
+    main > .section2 > .meta h1 {
+        font-size: 2.3rem;
+        padding-bottom: 20px;
+    }
+
+    main > .section2 > .meta p {
+        font-size: 1.1rem;
+        line-height: 30px;
+        max-width: 92%;
+        padding-bottom: 52px;
+    }
+
+    main > .section2 > .meta button {
+        font-size: 1.2rem;
+        padding: 13px 14px;
+    }
+
+    main > .section3 h1 {
+        font-size: 2.3rem;
+        max-width: 80%;
+    }
+
+    main > .section3 > div p {
+        text-align: start;
+        font-size: 1.2rem;
+        padding-left: 0;
+        max-width: 92%;
+    }
+
+    main > .section3 > .arrow {
+        inset: 259% 0 0 82%;
+    }
+
+    main > .section7 > .collections h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    main > .section7 > .collections p {
+        font-size: 1rem;
+        font-weight: 400;
+        max-width: 95%;
+    }
+
+    main > .section7 > .collections .btn2, .btn {
+        width: 25%;
+        padding: 13px 5px;
+        font-size: 1.2rem;
+    }
+
+    main > .section5 {
+        width: 100%;
+        padding-top: 110px;
+    }
+
+    main > .section5 h1 {
+        font-size: 2.3rem;
+    }    
+    
+    main > .section5 p {
+        font-size: 1.1rem;
+        padding-left: 0;
+        max-width: 92%;
+    }
+
+    main > .section8 {
+        padding-top: 70px;
+    }
+
+    main > .section8 > .week h1 {
+        font-size: 2.3rem;
+        max-width: 70%;
+    }
+
+    main > .section8 > .week img {
+        width: 10%;
+        inset: 40% 0 0 76%;
+    }
+
+    main > .section9 {
+        padding-top: 100px;
+    }
+
+    main > .section9 > .online h1 {
+        font-size: 2.3rem;
+        max-width: 76%;
+    }
+
+    main > .section9 > .online img {
+        width: 10%;
+        inset: 40% 0 0 76%;
+    }
+
+    footer {
+        padding: 7% 0;
+        margin-top: 12%;
+        padding: 100px 90px 0 90px;
+    }
+
+    footer > .logo2 img {
+        width: 50%;
+    }
+
+    footer > .logo2 p {
+        max-width: 100%;
+        padding-bottom: 0;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    footer > div h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    footer > div p {
+        padding-bottom: 8px;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    footer > .abse {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    footer > .contact2 {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    main > .section3 > .arrow {
+        inset: 256% 0 0 82%;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 17%;
+    }
+
+    main > .section1 > .explore > .click > button {
+        width: 210px;
+        height: 70px;
+        font-size: 1.5rem;
+    }
+
+    main > .section2 > .meta {
+        width: 100%;
+        padding-left: 80px;
+    }
+
+    main > .section2 > .meta button {
+        font-size: 1.2rem;
+        padding: 10px 10px;
+    }
+
+    main > .section3 {
+        width: 100%;
+        padding-left: 80px;
+    }
+
+    main > .section3 > .arrow {
+        inset: 250% 0 0 82%;
+    }
+
+    main > .section5 {
+        width: 100%;
+        padding-left: 80px;
+    }
+
+    main > .section7 > .collections .btn2, .btn {
+        width: 30%;
+        padding: 10px 5px;
+        font-size: 1rem;
+    }
+
+    main > .section8 > .week h1 {
+        width: 100%;
+        padding-left: 80px;
+    }
+
+    main > .section9 > .online h1 {
+        width: 100%;
+        padding-left: 80px;
+    }
+
+    footer {
+        padding: 100px 80px 0 80px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    main > .section1 > .explore h1 {
+        font-size: 2.5rem;
+        line-height: 65px;
+        max-width: 77%;
+    }
+
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 16%;
+    }
+
+    main > .section1 > .explore > .click > button {
+        width: 185px;
+        height: 60px;
+        font-size: 1.1rem;
+    }
+
+    main > .nun > h3, .off > h3, .mine > h3 {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    main > .nun > p, .off > p, .mine p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    main > .nun {
+        inset: 35% 0 0 7%;
+        background-color: rgb(0, 0, 0);
+        width: 15%;
+        height: 10%;
+    }
+
+    main > .off {
+        inset: 25% 0 0 32%;
+    }
+
+    main > .mine {
+        inset: 30% 0 0 81%;
+    }
+
+    main > .section2 {
+        padding: 250px 0 50px 0;
+    }
+
+    main > .section3 > .arrow {
+        inset: 225% 0 0 82%;
+    }
+
+    main > .section5 {
+        width: 100%;
+        padding-top: 100px;
+    }
+
+    main > .section8 {
+        padding-top: 30px;
+    }
+
+    footer > .abse {
+        padding-top: 5px;
+    }
+
+    footer > .contact2 {
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 521px) {
+    main > .section1 > .explore h1 {
+        font-size: 2.3rem;
+        line-height: 65px;
+        max-width: 80%;
+    }
+
+    main > .section1 > .explore p {
+        font-size: 1.3rem;
+        max-width: 73%;
+    }
+
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 14%;
+    }
+
+    main > .section1 > .explore > .click > button {
+        width: 170px;
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    main > .section2 > .meta h1 {
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+
+    main > .section2 > .meta p {
+        font-size: 1rem;
+        line-height: 25px;
+        max-width: 92%;
+        padding-bottom: 45px;
+    }
+
+    main > .section3 h1 {
+        font-size: 2rem;
+        max-width: 80%;
+    }
+
+    main > .section3 > div p {
+        text-align: start;
+        font-size: 1rem;
+        padding-left: 0;
+        max-width: 92%;
+    }
+
+    main > .section3 > .arrow {
+        inset: 213% 0 0 82%;
+    }
+
+    main > .section7 > .collections h3 {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    main > .section7 > .collections p {
+        font-size: 1rem;
+        font-weight: 200;
+        max-width: 95%;
+    }
+
+    main > .section5 h1 {
+        font-size: 2rem;
+    }    
+    
+    main > .section5 p {
+        font-size: 1rem;
+        padding-left: 0;
+        max-width: 92%;
+    }
+
+    main > .section8 > .week h1 {
+        font-size: 2rem;
+        max-width: 80%;
+    }
+
+    main > .section9 > .online h1 {
+        font-size: 2rem;
+        max-width: 76%;
+    }
+
+    footer > .logo2 img {
+        width: 50%;
+    }
+
+    footer > .logo2 p {
+        max-width: 100%;
+        padding-bottom: 8px;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    footer > div h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    footer > div p {
+        padding-bottom: 8px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    main > .section2 > .meta {
+        width: 100%;
+        padding-left: 60px;
+    }
+
+    main > .section3 {
+        width: 100%;
+        padding-left: 60px;
+    }
+
+    main > .section5 {
+        width: 100%;
+        padding-left: 60px;
+    }
+
+    main > .section8 > .week h1 {
+        width: 100%;
+        padding-left: 60px;
+    }
+
+    main > .section9 > .online h1 {
+        width: 100%;
+        padding-left: 60px;
+    }
+
+    footer {
+        padding: 100px 60px 0 60px;
+    }
+}
+
+@media screen and (max-width: 461px) {
+    main > .nun > h3, .off > h3, .mine > h3 {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    main > .nun {
+        inset: 30% 0 0 7%;
+        background-color: rgb(0, 0, 0);
+        width: 15%;
+        height: 10%;
+    }
+
+    main > .off {
+        inset: 20% 0 0 32%;
+    }
+
+    main > .mine {
+        inset: 26% 0 0 81%;
+    }
+
+    main > .section1 > .explore h1 {
+        font-size: 2.1rem;
+        line-height: 60px;
+        max-width: 83%;
+    }
+
+    main > .section1 > .explore p {
+        font-size: 1.1rem;
+        max-width: 73%;
+    }
+
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 16%;
+    }
+
+    main > .section1 > .explore > .click > button {
+        width: 145px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    main > .section2 > .meta h1 {
+        font-size: 1.8rem;
+        padding-bottom: 20px;
+    }
+
+    main > .section3 h1 {
+        font-size: 1.8rem;
+        max-width: 80%;
+    }
+
+    main > .section3 > .arrow {
+        inset: 203% 0 0 82%;
+    }
+
+    main > .section5 h1 {
+        font-size: 1.8rem;
+    }    
+
+    main > .section7 > .collections .btn2, .btn {
+        width: 35%;
+        padding: 6px 5px;
+        font-size: 1rem;
+    }
+
+    main > .section8 > .week h1 {
+        font-size: 1.8rem;
+        max-width: 80%;
+    }
+
+    main > .section8 > .week img {
+        width: 10%;
+        inset: 50% 0 0 76%;
+    }
+
+    main > .section9 > .online h1 {
+        font-size: 1.8rem;
+        max-width: 76%;
+    }
+
+    main > .section9 > .online img {
+        width: 10%;
+        inset: 50% 0 0 76%;
+    }
+
+    footer > .logo2 img {
+        width: 40%;
+    }
+
+    footer > div h3 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 406px) {
+    main > .section1 > .explore h1 {
+        font-size: 2rem;
+        line-height: 50px;
+        max-width: 87%;
+    }
+
+    main > .section1 > .explore p {
+        font-size: 1.1rem;
+        max-width: 73%;
+    }
+
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 12%;
+    }
+
+    main > .section1 > .explore > .click > button {
+        width: 140px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    main > .section2 > .meta {
+        width: 100%;
+        padding-left: 45px;
+    }
+
+    main > .section3 {
+        width: 100%;
+        padding-left: 60px;
+    }
+
+    main > .section3 > .arrow {
+        inset: 193% 0 0 82%;
+    }
+
+    main > .section5 {
+        width: 100%;
+        padding-left: 45px;
+    }
+
+    main > .section7 > .collections .btn2, .btn {
+        width: 38%;
+        padding: 6px 5px;
+        font-size: 1rem;
+    }
+
+    main > .section8 > .week h1 {
+        width: 100%;
+        padding-left: 45px;
+    }
+
+    main > .section8 > .week img {
+        width: 10%;
+        inset: 60% 0 0 76%;
+    }
+
+    main > .section9 > .online h1 {
+        width: 100%;
+        padding-left: 45px;
+    }
+
+    main > .section9 > .online img {
+        width: 10%;
+        inset: 60% 0 0 76%;
+    }
+
+    footer {
+        padding: 100px 45px 0 45px;
+    }
+
+    footer > .logo2 img {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    main > .nun > h3, .off > h3, .mine > h3 {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    main > .nun {
+        inset: 26% 0 0 7%;
+        background-color: rgb(0, 0, 0);
+        width: 15%;
+        height: 10%;
+    }
+
+    main > .off {
+        inset: 18% 0 0 32%;
+    }
+
+    main > .mine {
+        inset: 24% 0 0 81%;
+    }
+
+    main > .section1 > .explore h1 {
+        font-size: 2rem;
+        line-height: 50px;
+        max-width: 89%;
+    }
+
+    main > .section1 > .explore p {
+        font-size: 1.1rem;
+        max-width: 73%;
+    }
+
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 12%;
+    }
+
+    main > .section1 > .explore > .click > button {
+        width: 132px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    main > .section2 > .meta h1 {
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+    }
+
+    main > .section3 h1 {
+        font-size: 1.5rem;
+        max-width: 80%;
+    }
+
+    /* main > .section3 > .arrow {
+        inset: 204% 0 0 82%;
+    } */
+
+    main > .section5 h1 {
+        font-size: 1.5rem;
+    }    
+
+    main > .section8 > .week h1 {
+        font-size: 1.5rem;
+        max-width: 75%;
+    }
+
+    main > .section8 > .week img {
+        width: 10%;
+        inset: 50% 0 0 76%;
+    }
+
+    main > .section9 > .online h1 {
+        font-size: 1.5rem;
+        max-width: 76%;
+    }
+
+    main > .section9 > .online img {
+        width: 10%;
+        inset: 50% 0 0 76%;
+    }
+
+    footer > .logo2 img {
+        width: 45%;
+    }
+
+    footer > div h3 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    footer > .abse {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 65px;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    main > .section1 > .explore h1 {
+        font-size: 1.8rem;
+        line-height: 40px;
+        max-width: 89%;
+    }
+
+    main > .section1 > .explore p {
+        font-size: 1rem;
+        max-width: 73%;
+    }
+
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 9%;
+    }
+
+    main > .section1 > .explore > .click > button {
+        width: 130px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    main > .section3 > .arrow {
+        inset: 185% 0 0 82%;
+    }
+
+    main > .section8 > .week img {
+        width: 10%;
+        inset: 60% 0 0 76%;
+    }
+
+    main > .section9 > .online img {
+        width: 10%;
+        inset: 60% 0 0 76%;
+    }
+}
+
+@media screen and (max-width: 347px) {
+    main > .section7 > .collections .btn2, .btn {
+        width: 44%;
+        padding: 6px 5px;
+        font-size: 1rem;
     }
 }
