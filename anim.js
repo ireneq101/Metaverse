@@ -1,59 +1,20 @@
-// const Options = {
-//     rootMargin: "0px",
-//     threshold:1,
-// }
+const hamburger = document.querySelector('header > .irene > div > .open')
+const close = document.querySelector('header > .irene > div > .close')
+const nav2 = document.querySelector('.nav2')
 
-// function observeFunc(entries) {
-//     entries.forEach((entry) => {
-//         console.log(entry)
-//         if (entry.isIntersecting) {
-//             const { target } = entry
+hamburger.addEventListener('click', ()=> {
+    hamburger.classList.add('hide')
+    close.classList.add('hide')
+    nav2.classList.toggle('visible')
+})
 
-//             if (
-//                 target.class === "section4"
-//             ) {
-//                 target.classList.add ("fade-in")
-//             }
-//         }
-//     })
-// }
-
-// const observer = new IntersectionObserver (
-//     observeFunc,
-//     Options
-// )
-
-// observer.observe (section4)
+close.addEventListener('click', ()=>{
+    hamburger.classList.remove('hide')
+    close.classList.remove('hide')
+    nav2.classList.toggle('visible')
+})
 
 
-// const Options = {
-//     rootMargin: "0px",
-//     threshold:1,
-// }
-// const faders = document.querySelectorAll(".collections");
-
-// const appearOptions = {};
-
-// const appearOnScroll = new IntersectionObserver
-// (function(
-//     entries, 
-//     appearOnScroll
-// ) {
-//    entries.forEach(entry => {
-//     if (!entery.isIntersecting) {
-//         return;
-//     } else {
-//         entry.target.classList.add("appear");
-//         appearOnScroll.unobserve(entry.target);
-//     }
-//    }) 
-// }, 
-// appearOptions);
-
-// faders.forEach(fader => {
-//     appearOnScroll.observe(fader);
-// })
-
-<script>
+{/* <script> */}
   AOS.init();
-</script>
+{/* </script> */}

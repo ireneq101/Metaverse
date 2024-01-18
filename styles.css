@@ -12,17 +12,17 @@ body {
     width: 1540;
 }
 
-header {
+header > .irene {
     display: flex;
     justify-content: space-between;
     padding: 4% 6%;
 }
 
-header > .logo {
+header > .irene > .logo {
     width: 45%;
 }
 
-header > nav {
+header > .irene > nav {
     width: 40%;
     display: flex;
     align-items: flex-start;
@@ -30,7 +30,7 @@ header > nav {
     gap: 20px;
 }
 
-header > nav a {
+header > .irene > nav a {
     color: #fff;
     cursor: pointer;
     text-decoration: none;
@@ -41,16 +41,23 @@ header > nav a {
     line-height: normal;
 }
 
-header > nav a:hover {
+header > .irene > nav a:hover {
     background: var(--2, linear-gradient(97deg, #F86CF8 12.04%, #64CEF5 81.84%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-header > img {
+header > .irene > div > .open {
+    display: none; 
+}
+
+header > .irene > div > .close {
     display: none;
-    background-color: #fff;
+}
+
+header > .nav2 {
+    display: none;
 }
 
 main > .mobile-section {
@@ -864,6 +871,97 @@ footer > .contact > ul {
 }
 
 @media screen and (max-width: 1094px) {
+    header {
+        padding: 8% 6%;
+        justify-content: space-between;
+    }
+
+    header > .irene > .logo {
+        width: 45%;
+    };
+
+    header > .irene > .logo img {
+        width: 65%;
+    }
+    
+    header > .irene > nav {
+        display: none;
+    }
+
+    /* header > div > .open, .close {
+        align-content: flex-end;
+        width: 45%;
+        justify-content: space-between;
+        background-color: #010101;
+    } */
+
+    header > .irene > div > .open {
+        width:  150%;
+        display: block;
+    }
+
+    header > .irene > div > .open.hide {
+        display: none;
+    }
+
+    header > .irene > div > .close {
+        width: 150%;
+    }
+
+    header > .irene > div > .close.hide {
+        display: block;
+    }
+
+    header > .nav2 {
+        position: relative;
+        right: 0;
+        width: 45%;
+    }
+
+    header > .nav2 > .item img {
+        width: 70px;
+        height: 60px;
+        padding-left: 15px;
+        flex-shrink: 0;
+    } 
+
+    header > .nav2.visible {
+        /* position: fixed; */
+        top: 12%;
+        left: 50%;
+        height: 100vh;
+        width: 50%;
+        z-index: 999999;
+        background: var(--3, linear-gradient(97deg, #D10ED1 12.04%, #10A3DA 81.84%));
+        transition: ease-in-out 0.3s;
+        overflow: hidden;
+        gap: 72px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        position: absolute;
+    }
+
+    header > .nav2 > .item a {
+        text-decoration: none;
+        padding-left: 30px;
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-family: "Poppins";
+        text-align: center;
+        opacity: 0;
+        transition: ease-in-out 0.3s;
+        /* transition-delay: .2s; */
+        /* margin-left: 15px; */
+        /* white-space: nowrap; */
+    }
+
+    header > .nav2 a:hover {
+        color: #ffffff;
+        opacity: 1;
+        text-decoration: none;
+    }
+
     main > .section1 {
         display: flex;
         justify-content: center;
@@ -883,44 +981,14 @@ footer > .contact > ul {
         gap: 68px;
         padding-top: 40px;
     }
-
-    header {
-        padding: 8% 6%;
-    }
-
-    header > .logo {
-        width: 45%;
-    }
-
-    header > .logo img {
-        width: 55%;
-    }
-    
-    header > nav {
-        /* width: 40%; */
-        display: none;
-        /* align-items: flex-start;
-        justify-content: space-evenly;
-        gap: 20px; */
-    }
-
-    header > img {
-        /* display: flex; */
-        width: 5%;
-        background-color: #010101;
-    }
-
-    header > .open {
-        /* width: 9%; */
-        display: flex;
-    }
     
     main > .mobile-section {
         display: flex;
-        position: relative;
+        /* position: relative; */
         margin: 0 auto;
-        padding-top: 190px;
+        padding-top: 130px;
         width: 80%;
+        z-index: 2;
     }
 
     main > .mobile-section > img {
@@ -939,6 +1007,7 @@ footer > .contact > ul {
         line-height: normal;
         cursor: default;
         padding-bottom: 10px;
+        z-index: 4;
     }
 
     main > .nun > p, .off > p, .mine p {
@@ -948,6 +1017,7 @@ footer > .contact > ul {
         font-weight: 400;
         line-height: normal;
         cursor: default;
+        z-index: 4;
     }
 
     main > .nun {
@@ -1084,7 +1154,7 @@ footer > .contact > ul {
     main > .section3 > .arrow {
         width: 20%;
         position: absolute;
-        inset: 330% 0 0 82%;
+        inset: 334% 0 0 82%;
     }
 
     main > .section3 img {
@@ -1285,8 +1355,8 @@ footer > .contact > ul {
     }
 
     footer {
-        width: 100%px;
-        height: 100vh;
+        width: 100%;
+        height: 120vh;
         display: grid;
         grid-template-columns: none;
         padding: 7.5% 0;
@@ -1480,6 +1550,12 @@ footer > .contact > ul {
     }
 }
 
+@media screen and (max-width: 1020px) {
+    main > .section3 > .arrow {
+        inset: 322% 0 0 82%;
+    }
+}
+
 @media screen and (max-width: 963px) {
     main > .nun > h3, .off > h3, .mine > h3 {
         font-size: 2.2rem;
@@ -1514,6 +1590,14 @@ footer > .contact > ul {
 @media screen and (max-width: 947px) {
     main > .section3 > .arrow {
         inset: 309% 0 0 82%;
+    }
+
+    main > .mobile-section {
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 115px;
+        width: 80%;
     }
 }
 
@@ -2111,7 +2195,7 @@ footer > .contact > ul {
     }
 
     main > .section3 > .arrow {
-        inset: 250% 0 0 82%;
+        inset: 110% 0 0 82%;
     }
 
     main > .section5 {
