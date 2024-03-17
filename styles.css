@@ -23,10 +23,15 @@ body {
   );
   width: 1540;
 }
+header {
+    position: sticky;
+    top: 0;
+}
 
 header > .irene {
   display: flex;
   justify-content: space-between;
+  position: sticky;
   padding: 4% 6%;
 }
 
@@ -55,8 +60,8 @@ header > .irene > nav a {
 
 header > .irene > nav a:hover {
   background: var(--2, linear-gradient(97deg, #f86cf8 12.04%, #64cef5 81.84%));
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -117,8 +122,8 @@ main > .section1 > .explore h1 {
 
 main > .section1 > .explore span {
   background: var(--2, linear-gradient(97deg, #f86cf8 12.04%, #64cef5 81.84%));
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -253,8 +258,8 @@ main > .section2 > .meta h1 {
 
 main > .section2 > .meta span {
   background: var(--2, linear-gradient(97deg, #f86cf8 12.04%, #64cef5 81.84%));
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -312,8 +317,8 @@ main > .section3 h1 {
 
 main > .section3 span {
   background: var(--2, linear-gradient(97deg, #f86cf8 12.04%, #64cef5 81.84%));
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Orbitron", sans-serif;
   font-style: normal;
@@ -442,8 +447,8 @@ main > .section5 h1 {
 
 main > .section5 span {
   background: var(--1, linear-gradient(97deg, #65bbf5 0%, #64cef5 81.84%));
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Orbitron";
 }
@@ -548,8 +553,8 @@ footer > .serve {
 
 footer > .serve p:hover {
   background: var(--2, linear-gradient(97deg, #f86cf8 12.04%, #64cef5 81.84%));
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -561,8 +566,8 @@ footer > .about {
 
 footer > .about p:hover {
   background: var(--2, linear-gradient(97deg, #f86cf8 12.04%, #64cef5 81.84%));
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -873,10 +878,13 @@ footer > .contact > ul {
     }
 }
 
-@media screen and (max-width: 850px) and (max-width: 1280px) {
+@media screen and (max-width: 835px) {
     header {
-        padding: 8% 6%;
+        position: sticky;
+        z-index: 2229999;
+        padding: 5% 6%;
         justify-content: space-between;
+        backdrop-filter: blur(20px);
     }
   
     header > .irene > .logo {
@@ -909,9 +917,11 @@ footer > .contact > ul {
     }
   
     header > .nav2 {
+        position: sticky;
         position: relative;
         right: 0;
         width: 45%;
+        backdrop-filter: blur(100px);
     }
   
     header > .nav2 > .item img {
@@ -922,19 +932,21 @@ footer > .contact > ul {
     } 
   
     header > .nav2.visible {
-        top: 12%;
+        top: 62%;
         left: 50%;
-        height: 200vh;
+        height: 100vh;
         width: 50%;
         z-index: 999999;
         background: var(--3, linear-gradient(97deg, #D10ED1 12.04%, #10A3DA 81.84%));
-        transition: ease-in-out 0.3s;
+        /* backdrop-filter: blur(500px); */
         overflow: hidden;
         gap: 72px;
         display: flex;
         flex-direction: column;
         padding-top: 40px;
         position: absolute;
+        /* position: sticky; */
+        /* top: 0; */
     }
   
     header > .nav2 > .item a {
@@ -944,14 +956,7 @@ footer > .contact > ul {
         font-weight: 400;
         font-family: "Poppins";
         text-align: center;
-        opacity: 0;
-        transition: ease-in-out 0.3s;
-    }
-  
-    header > .nav2 a:hover {
-        color: #ffffff;
-        opacity: 1;
-        text-decoration: none;
+        color: white;
     }
 
     main > .section1 {
@@ -979,11 +984,12 @@ footer > .contact > ul {
         margin: 0 auto;
         padding-top: 130px;
         width: 80%;
-        z-index: 2;
     }
   
     main > .mobile-section > img {
         width: 100%;
+        -webkit-mask-image: linear-gradient(black, black,  transparent);
+        mask-image: linear-gradient(black, black,  transparent);
     }
   
     main > .nun, .off, .mine {
@@ -1012,8 +1018,7 @@ footer > .contact > ul {
     }
   
     main > .nun {
-        inset: 35% 0 0 7%;
-        background-color: black;
+        inset: 37% 0 0 7%;
         width: 17%;
         height: 15%;
         display: flex;
@@ -1029,7 +1034,7 @@ footer > .contact > ul {
     }
   
     main > .mine {
-        inset: 30% 0 0 81%;
+        inset: 28% 0 0 83%;
         display: flex;
         flex-direction: column;
         z-index: 20;
@@ -1146,7 +1151,7 @@ footer > .contact > ul {
     main > .section3 > .arrow {
         width: 20%;
         position: absolute;
-        inset: 236% 0 0 82%;
+        inset: 240% 0 0 82%;
     }
   
     main > .section3 img {
@@ -1396,8 +1401,8 @@ footer > .contact > ul {
     
     footer > .serve p:hover {
         background: var(--2, linear-gradient(97deg, #F86CF8 12.04%, #64CEF5 81.84%));
-        background-clip: text;
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     
@@ -1408,8 +1413,8 @@ footer > .contact > ul {
     
     footer > .about p:hover {
         background: var(--2, linear-gradient(97deg, #F86CF8 12.04%, #64CEF5 81.84%));
-        background-clip: text;
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
   
@@ -1441,6 +1446,7 @@ footer > .contact > ul {
     }
     
     footer > .contact2 img:hover {
+        background: var(--3, linear-gradient(97deg, #10a3da 12.84%, #d10ed1 81.04%));
         border-radius: 10%;
         width: 80%;
         height: 95%;
@@ -1457,7 +1463,79 @@ footer > .contact > ul {
     }
 }
 
-@media screen  and (min-width: 801px) {
+@media screen  and (min-width: 834px) {
+    main > .section3 > .arrow {
+      width: 20%;
+      position: absolute;
+      inset: 275% 0 0 82%;
+    }
+}
+
+@media screen  and (min-width: 820px) {
+    main > .section3 > .arrow {
+      width: 20%;
+      position: absolute;
+      inset: 280% 0 0 82%;
+    }
+}
+
+@media screen  and (max-width: 768px) {
+    main > .section3 > .arrow {
+      width: 20%;
+      position: absolute;
+      inset: 315% 0 0 82%;
+    }
+
+    main > .nun {
+        inset: 45% 0 0 7%;
+        width: 17%;
+        height: 15%;
+    }
+  
+    main > .off {
+        inset: 27% 0 0 32%;
+    }
+  
+    main > .mine {
+        inset: 30% 0 0 81%;
+    }
+
+    footer {
+        width: 100%;
+        height: 100vh;
+        /* display: grid;
+        grid-template-columns: none;
+        padding: 7.5% 0;
+        margin-top: 12%;
+        padding: 100px; */
+    }
+    
+    footer > .logo2 p {
+        max-width: 100%;
+        padding-bottom: 8px;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    
+    footer > div h3 {
+        padding-bottom: 23px;
+        font-size: 2.3rem;
+        font-weight: 700;
+    }
+    
+    footer > div p {
+        padding-bottom: 8px;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    
+    footer > .contact2 p {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+/* @media screen  and (min-width: 801px) {
   main > .section3 > .arrow {
     width: 20%;
     position: absolute;
@@ -1471,7 +1549,7 @@ footer > .contact > ul {
     max-width: 96%;
   }
 
-}
+} */
 
 @media screen and (max-width: 786px) {
   /* main > .section1 {
@@ -1510,7 +1588,7 @@ footer > .contact > ul {
       position: absolute;
   } */
 
-  main > .nun > h3, .off > h3, .mine > h3 {
+  /* main > .nun > h3, .off > h3, .mine > h3 {
       font-size: 2rem;
   }
 
@@ -1520,7 +1598,6 @@ footer > .contact > ul {
 
   main > .nun {
       inset: 45% 0 0 7%;
-      background-color: black;
       width: 17%;
       height: 15%;
   }
@@ -1701,10 +1778,20 @@ footer > .contact > ul {
   
   footer > .contact2 img {
       width: 80%;
-  }
+  } */
 }
 
-@media screen and (max-width: 430px) and (max-width: 926px) {
+@media screen and (max-width: 430px) {
+    header > .nav2 > .item a {
+        text-decoration: none;
+        padding-left: 30px;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: "Poppins";
+        text-align: center;
+        color: white;
+    }
+
   main > .nun > h3, .off > h3, .mine > h3 {
     font-size: 1.1rem;
 }
@@ -1714,18 +1801,17 @@ main > .nun > p, .off > p, .mine p {
 }
 
 main > .nun {
-    inset: 38% 0 0 7%;
-    background-color: black;
+    inset: 42% 0 0 7%;
     width: 17%;
     height: 11%;
 }
 
 main > .off {
-    inset: 27% 0 0 32%;
+    inset: 27% 0 0 35%;
 }
 
 main > .mine {
-    inset: 35% 0 0 80%;
+    inset: 32% 0 0 83%;
 }
 
 main > .section1 > .explore {
@@ -1803,7 +1889,7 @@ main > .section3 > div p {
 }
 
 main > .section3 > .arrow {
-    inset: 227% 0 0 82%;
+    inset: 230% 0 0 82%;
 }
 
 main > .section3 img {
@@ -1901,105 +1987,725 @@ footer > .contact2 img {
 }
 }
 
-@media screen and (max-width: 391px) {
-  main > .nun > h3, .off > h3, .mine > h3 {
-    font-size: 1rem;
+/* @media screen and (max-width: 414px) and (max-width: 896px)  {
+    main > .section3 > .arrow {
+    inset: 229% 0 0 82%;
+    }
+} */
+
+/* @media screen and (max-width: 390px) {
+    main > .section3 > .arrow {
+        inset: 350% 0 0 82%;
+    }
+} */
+
+@media screen and (max-width: 394px) {
+    main > .nun > h3, .off > h3, .mine > h3 {
+        font-size: 1rem;
+    }
+
+    main > .nun > p, .off > p, .mine p {
+        font-size: 1rem;
+    }
+
+    main > .nun {
+        inset: 42% 0 0 7%;
+        width: 16%;
+        height: 12%;
+    }
+
+    main > .off {
+        inset: 28% 0 0 32%;
+    }
+
+    main > .mine {
+        inset: 32% 0 0 82%;
+    }
+
+    main > .section1 > .explore {
+        width: 100%;
+        padding: 25px 0;
+        margin: 0 auto;
+    }
+
+    main > .section1 > .explore h1 {
+        font-size: 2rem;
+        line-height: 50px;
+        max-width: 90%;
+    }
+
+    main > .section1 > .explore p {
+        font-size: 1.2rem;
+    }
+
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 13%;
+    }
+
+    main > .section1 > .explore > .click > button {
+        width: 127px;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    main > .section3 > .arrow {
+        inset: 248% 0 0 82%;
+    }
 }
 
-main > .nun > p, .off > p, .mine p {
-    font-size: 1rem;
+@media screen and (max-width: 376px) {
+    main > .nun {
+        inset: 45% 0 0 7%;
+        width: 16%;
+        height: 12%;
+    }
+
+    main > .section1 > .explore h1 {
+        font-size: 1.8rem;
+        line-height: 40px;
+        max-width: 90%;
+    }
+
+    main > .section3 > .arrow {
+        inset: 253% 0 0 82%;
+    }
+
+    main > .section8 {
+        padding-top: 80px;
+    }
+
+    main > .section9 {
+        padding-top: 70px;
+    }
 }
 
-main > .nun {
-    inset: 40% 0 0 7%;
-    background-color: black;
-    width: 16%;
-    height: 12%;
+/* @media screen and (min-width: 800px) {
+    main > .nun {
+        inset: 40% 0 0 7%;
+        width: 16%;
+        height: 12%;
+    }
+} */
+
+@media screen and (max-width: 361px) {   
+    main > .nun > p, .off > p, .mine p {
+        font-size: 1rem;
+    }
+    
+    main > .nun {
+        inset: 40% 0 0 7%;
+        width: 17%;
+        height: 12%;
+    }
+    
+    main > .off {
+        inset: 28% 0 0 32%;
+    }
+    
+    main > .mine {
+        inset: 32% 0 0 80%;
+    }
+    
+    main > .section1 > .explore {
+        width: 100%;
+        padding: 25px 0;
+        margin: 0 auto;
+    }
+    
+    main > .section1 > .explore h1 {
+        font-size: 1.7rem;
+        line-height: 40px;
+        max-width: 80%;
+    }
+    
+    main > .section1 > .explore p {
+        font-size: 1rem;
+    }
+    
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 12%;
+    }
+    
+    main > .section1 > .explore > .click > button {
+        width: 128px;
+        height: 38px;
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+      
+    main > .section2 {
+        padding: 100px 0 30px 0;
+    }
+    
+    main > .section2 > .pic2 {
+        width: 80%;
+    }
+    
+    main > .section2 > .pic2 img {
+        width: 100%;
+    }
+    
+    main > .section2 > .meta {
+        padding-left: 40px;
+    }
+    
+    main > .section2 > .meta h1 {
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+    }
+    
+    main > .section2 > .meta p {
+        font-size: 1rem;
+        line-height: 22px;
+        max-width: 97%;
+    }
+    
+    main > .section2 > .meta button {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+    
+    main > .section3 {
+        width: 100%;
+        padding-left: 40px;
+        padding-top: 0;
+    }
+    
+    main > .section3 h1 {
+        font-size: 1.5rem;
+        max-width: 90%;
+    }
+    
+    main > .section3 > div p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    
+    main > .section3 > .arrow {
+        inset: 230% 0 0 82%;
+    }
+    
+    main > .section3 img {
+        display: flex;
+        width: 25%;
+    }
+    
+    main > .section7 > .collections h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    main > .section7 > .collections p {
+        font-size: 1rem;
+        font-weight: 300;
+        max-width: 97%;
+    }
+    
+    main > .section7 > .collections .btn2, .btn {
+        width: 40%;
+        padding: 4px 3px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    main > .section7 > .collections .btn2 {
+        border-radius: 2px;
+    }
+    
+    main > .section5 {
+        padding-top: 80px;
+        padding-left: 40px;
+    } 
+    
+    main > .section5 h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    main > .section5 > .cras p {
+        font-size: 1rem;
+        max-width: 97%;
+    }
+    
+    main > .section8 > .week h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-left: 40px;
+        max-width: 80%;
+    }
+    
+    main > .section9 > .online h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        max-width: 80%;
+        padding-left: 40px;
+    }
+    
+    footer {
+        height: 100vh;
+        margin-top: 12%;
+        padding: 30px;
+    }
+    
+    footer > .logo2 {
+        width: 100%;
+    }
+    
+    footer > .logo2 img {
+        padding-bottom: 30px;
+        width: 39%;
+    }
+    
+    footer > .logo2 p {
+        max-width: 100%;
+        padding-bottom: 0;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    footer > div h3 {
+        padding-bottom: 15px;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    footer > div p {
+        padding-bottom: 5px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    footer > .contact2 {
+        padding-top: 15px;
+    }
+    
+    footer > .contact2 img {
+        width: 80%;
+    }
 }
 
-main > .off {
-    inset: 29% 0 0 32%;
+@media screen and (max-width: 360px) {   
+    main > .nun > p, .off > p, .mine p {
+        font-size: 1rem;
+    }
+    
+    main > .nun {
+        inset: 40% 0 0 7%;
+        width: 17%;
+        height: 12%;
+    }
+    
+    main > .off {
+        inset: 28% 0 0 32%;
+    }
+    
+    main > .mine {
+        inset: 32% 0 0 80%;
+    }
+
+    main > .section3 > .arrow {
+        inset: 220% 0 0 82%;
+    }
 }
 
-main > .mine {
-    inset: 37% 0 0 80%;
+@media screen and (max-width: 840px) and (min-width: 1195px) {   
+    main > .nun > p, .off > p, .mine p {
+        font-size: 2rem;
+    }
+    
+    main > .nun {
+        inset: 42% 0 0 7%;
+        width: 17%;
+        height: 12%;
+    }
+    
+    main > .off {
+        inset: 30% 0 0 32%;
+    }
+    
+    main > .mine {
+        inset: 37% 0 0 80%;
+    }
+    
+    main > .section1 > .explore {
+        width: 100%;
+        padding: 25px 0;
+        margin: 0 auto;
+    }
+    
+    main > .section1 > .explore h1 {
+        font-size: 1.7rem;
+        line-height: 40px;
+        max-width: 80%;
+    }
+    
+    main > .section1 > .explore p {
+        font-size: 1rem;
+    }
+    
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 12%;
+    }
+    
+    main > .section1 > .explore > .click > button {
+        width: 130px;
+        height: 40px;
+        font-size: 1rem;
+        padding-top: 7px;
+    }
+      
+    main > .section2 {
+        padding: 130px 0 30px 0;
+    }
+    
+    main > .section2 > .pic2 {
+        width: 80%;
+    }
+    
+    main > .section2 > .pic2 img {
+        width: 100%;
+    }
+    
+    main > .section2 > .meta {
+        padding-left: 40px;
+    }
+    
+    main > .section2 > .meta h1 {
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+    }
+    
+    main > .section2 > .meta p {
+        font-size: 1rem;
+        line-height: 22px;
+        max-width: 97%;
+    }
+    
+    main > .section2 > .meta button {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+    
+    main > .section3 {
+        width: 100%;
+        padding-left: 40px;
+    }
+    
+    main > .section3 h1 {
+        font-size: 1.5rem;
+        max-width: 90%;
+    }
+    
+    main > .section3 > div p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    
+    main > .section3 > .arrow {
+        inset: 13% 0 0 82%;
+    }
+    
+    main > .section3 img {
+        display: flex;
+        width: 25%;
+    }
+    
+    main > .section7 > .collections h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    main > .section7 > .collections p {
+        font-size: 1rem;
+        font-weight: 300;
+        max-width: 97%;
+    }
+    
+    main > .section7 > .collections .btn2, .btn {
+        width: 40%;
+        padding: 4px 3px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    main > .section5 {
+        padding-top: 80px;
+        padding-left: 40px;
+    } 
+    
+    main > .section5 h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    main > .section5 > .cras p {
+        font-size: 1rem;
+        max-width: 97%;
+    }
+    
+    main > .section8 > .week h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-left: 40px;
+        max-width: 80%;
+    }
+    
+    main > .section9 > .online h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        max-width: 80%;
+        padding-left: 40px;
+    }
+    
+    footer {
+        height: 100vh;
+        margin-top: 12%;
+        padding: 30px;
+    }
+    
+    footer > .logo2 {
+        width: 100%;
+    }
+    
+    footer > .logo2 img {
+        padding-bottom: 35px;
+        width: 39%;
+    }
+    
+    footer > .logo2 p {
+        max-width: 100%;
+        padding-bottom: 0;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    footer > div h3 {
+        padding-bottom: 15px;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    footer > div p {
+        padding-bottom: 5px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    footer > .contact2 {
+        padding-top: 15px;
+    }
+    
+    footer > .contact2 img {
+        width: 80%;
+    }
 }
 
-main > .section1 > .explore {
-    width: 100%;
-    padding: 25px 0;
-    margin: 0 auto;
-}
+@media screen and (max-width: 321px) { 
+    header > .nav2 > .item a {
+        font-size: 1rem;
+        color: white;
+    }
 
-main > .section1 > .explore h1 {
-    font-size: 2rem;
-    line-height: 50px;
-    max-width: 90%;
-}
+    header > .nav2.visible {
+        gap: 42px;
+    }
 
-main > .section1 > .explore p {
-    font-size: 1.2rem;
-}
+    main > .nun > p, .off > p, .mine p {
+        font-size: 1rem;
+    }
+    
+    main > .nun {
+        inset: 55% 0 0 7%;
+        width: 17%;
+        height: 12%;
+    }
+    
+    main > .off {
+        inset: 37% 0 0 32%;
+    }
+    
+    main > .mine {
+        inset: 42% 0 0 80%;
+    }
+    
+    main > .section1 > .explore {
+        width: 100%;
+        padding: 25px 0;
+        margin: 0 auto;
+    }
+    
+    main > .section1 > .explore h1 {
+        font-size: 1.5rem;
+        line-height: 35px;
+        max-width: 80%;
+    }
+    
+    main > .section1 > .explore p {
+        font-size: 1rem;
+    }
+    
+    main > .section1 > .explore > .click {
+        width: 100%;
+        margin: 0 12%;
+    }
+    
+    main > .section1 > .explore > .click > button {
+        width: 110px;
+        height: 58px;
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+      
+    main > .section2 {
+        padding: 100px 0 30px 0;
+    }
+    
+    main > .section2 > .pic2 {
+        width: 80%;
+    }
+    
+    main > .section2 > .pic2 img {
+        width: 100%;
+    }
+    
+    main > .section2 > .meta {
+        padding-left: 40px;
+    }
+    
+    main > .section2 > .meta h1 {
+        font-size: 1.3rem;
+        padding-bottom: 20px;
+    }
+    
+    main > .section2 > .meta p {
+        font-size: 1rem;
+        line-height: 20px;
+        max-width: 95%;
+    }
+    
+    main > .section2 > .meta button {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+    
+    main > .section3 {
+        width: 100%;
+        padding-left: 40px;
+        padding-top: 0;
+    }
+    
+    main > .section3 h1 {
+        font-size: 1.3rem;
+        max-width: 90%;
+    }
+    
+    main > .section3 > div p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+    
+    main > .section3 > .arrow {
+        inset: 308% 0 0 82%;
+    }
+    
+    main > .section3 img {
+        display: flex;
+        width: 25%;
+    }
+    
+    main > .section7 > .collections h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    main > .section7 > .collections p {
+        font-size: 1rem;
+        font-weight: 300;
+        max-width: 97%;
+    }
+    
+    main > .section7 > .collections .btn2, .btn {
+        width: 40%;
+        padding: 2px 1px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
 
-main > .section1 > .explore > .click {
-    width: 100%;
-    margin: 0 18%;
-}
-
-main > .section1 > .explore > .click > button {
-    width: 130px;
-    height: 50px;
-    font-size: 1rem;
-}
-
-main > .section2 {
-    padding: 150px 0 30px 0;
-}
-
-main > .section2 > .pic2 {
-    width: 80%;
-}
-
-main > .section2 > .pic2 img {
-    width: 100%;
-}
-
-main > .section2 > .meta {
-    padding-left: 50px;
-}
-
-main > .section2 > .meta h1 {
-    font-size: 1.7rem;
-    padding-bottom: 20px;
-}
-
-main > .section2 > .meta p {
-    font-size: 1.2rem;
-    line-height: 28px;
-    max-width: 97%;
-}
-
-main > .section2 > .meta button {
-    font-size: 1rem;
-    padding: 8px 13px;
-}
-
-main > .section3 {
-    width: 100%;
-    padding-left: 50px;
-}
-
-main > .section3 h1 {
-    font-size: 1.7rem;
-    max-width: 90%;
-}
-
-main > .section3 > div p {
-    font-size: 1.2rem;
-    max-width: 100%;
-}
-
-main > .section3 > .arrow {
-    inset: 227% 0 0 82%;
-}
+    main > .section7 > .collections .btn2 {
+        border-radius: 2px;
+    }
+    
+    main > .section5 {
+        padding-top: 80px;
+        padding-left: 40px;
+    } 
+    
+    main > .section5 h1 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    
+    main > .section5 > .cras p {
+        font-size: 1rem;
+        max-width: 95%;
+    }
+    
+    main > .section8 > .week h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-left: 40px;
+        max-width: 80%;
+    }
+    
+    main > .section9 > .online h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        max-width: 80%;
+        padding-left: 40px;
+    }
+    
+    footer {
+        height: 100vh;
+        margin-top: 12%;
+        padding: 30px;
+    }
+    
+    footer > .logo2 {
+        width: 100%;
+    }
+    
+    footer > .logo2 img {
+        padding-bottom: 30px;
+        width: 43%;
+    }
+    
+    footer > .logo2 p {
+        max-width: 100%;
+        padding-bottom: 0;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    footer > div h3 {
+        padding-bottom: 15px;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    footer > div p {
+        padding-bottom: 0px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    footer > .contact2 {
+        padding-top: 40px;
+    }
+    
+    footer > .contact2 img {
+        width: 80%;
+    }
 }
