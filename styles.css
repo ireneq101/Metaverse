@@ -884,6 +884,7 @@ footer > .contact > ul {
         z-index: 2229999;
         padding: 5% 6%;
         justify-content: space-between;
+        -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
     }
   
@@ -921,6 +922,7 @@ footer > .contact > ul {
         position: relative;
         right: 0;
         width: 45%;
+        -webkit-backdrop-filter: blur(100px);
         backdrop-filter: blur(100px);
     }
   
