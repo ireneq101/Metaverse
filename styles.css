@@ -223,6 +223,7 @@ main > .section2 {
   display: flex;
   justify-content: center;
   padding: 100px 0;
+  width: 100%;
 }
 
 main > .section2 > .pic2 {
@@ -618,6 +619,10 @@ footer > .contact > ul {
   }
 
   main > .section1 > .pic1 .inn {
+    width: 100%;
+  }
+
+  main > .section2 {
     width: 100%;
   }
 
